@@ -1,7 +1,7 @@
 import React from "react";
 
 import Heading from "../Components/Heading";
-import SelectLevel from "../Components/Homepage/SelectLevel";
+import SelectLevel from "../Components/ListofCourses/SelectLevel";
 
 export default function StartTestpage() {
   return (

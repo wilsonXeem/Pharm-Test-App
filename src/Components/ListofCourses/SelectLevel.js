@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import ListofCourses from "../StartTestpage/ListofCourses";
+import ListofCourses from "./ListofCourses";
 import coursesData from "../../data/CoursesData";
 
 export default function SelectLevel() {
