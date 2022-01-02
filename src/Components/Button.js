@@ -1,11 +1,9 @@
 import React from "react";
 
-export default function Button() {
+export default function Button({ type, handleSubmit }) {
   return (
-    <div>
-        <button className="proceedbutton" type="submit">
-          PROCEED
-        </button>
-    </div>
+      <button className="proceedbutton" onClick={handleSubmit}>
+        {type}
+      </button>
   );
 }

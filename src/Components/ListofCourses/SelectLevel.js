@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import ListofCourses from "./ListofCourses";
 import coursesData from "../../data/CoursesData";
+import { ValueContext } from "../../Context";
 
 export default function SelectLevel() {
   const [year, setYear] = useState([]);
+  const { getYear } = useContext(ValueContext);
 
   const handleChange = (e) => {
     let value = e.target.value;
+    getYear(value)
     // console.log(value);
     const courses = coursesData;
     if (value === "secondYear") {

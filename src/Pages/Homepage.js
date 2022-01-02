@@ -10,7 +10,7 @@ export default function Homepage() {
       <section className="homepage">
         <Banner>
           <Link to="/starttest">
-            <Button />
+            <Button type={`PROCEED`} />
           </Link>
         </Banner>
       </section>
