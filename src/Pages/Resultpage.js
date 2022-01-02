@@ -1,11 +1,12 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import Heading from "../Components/Heading";
 import Result from "../Components/Resultpage/Result";
 import TrueOrFalseResult from "../Components/Resultpage/TrueOrFalseResult";
+import { useParams } from "react-router-dom";
 
 export default function Resultpage() {
-  let { course } = useParams();
+  const { course } = useParams();
+  console.log(course);
   return (
     <>
       <Heading />

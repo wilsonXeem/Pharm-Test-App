@@ -20,7 +20,7 @@ export default function Testpage() {
       <TimerAndQuestions />
       <Body course={course} />
       <div style={{ textAlign: "center" }}>
-        <Link to={"/result"}>
+        <Link to={`/result/${course}`}>
           <Button type={`SUBMIT`} handleSubmit={handleSubmit} />
         </Link>
       </div>
