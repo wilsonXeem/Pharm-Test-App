@@ -10,8 +10,7 @@ export default function Resultpage() {
     <>
       <Heading />
       <h1 style={{ textAlign: "center" }}>RESULTS</h1>
-      {course === "cology" ? <Result /> : <TrueOrFalseResult />}
+      {course === "cology" ? <TrueOrFalseResult /> : <Result />}
     </>
   );
 }
- 
