@@ -12,7 +12,7 @@ export default function TrueOrFalseQuestion() {
         return id !== q.id ? (
           <p key={q.id} style={{ display: "none" }}></p>
         ) : (
-          <section key={q.id} className="question-section">
+          <section key={q.id} className="questions-section">
             <div className="question">
               {q.id}. {q.singleQuestion}
               <form>

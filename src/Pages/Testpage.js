@@ -25,7 +25,9 @@ export default function Testpage() {
         </Link>
       </div>
       <p style={{ color: "red", fontStyle: "italic", marginBottom: "0px" }}>
-        White color shows answered question
+        {course === "cology"
+          ? "Blue color shows incompletely answered question while white shows completely answered "
+          : "White color shows answered question"}
       </p>
       <Questions />
     </>

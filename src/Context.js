@@ -40,10 +40,18 @@ export class Context extends Component {
     let option = question.options.find((opt) => opt.optionId === name);
     option.optionValue = value;
     option.optionCheck = true;
-    this.setState({
-      background: "white",
-      color: "black",
-    });
+    let optionChecker = question.options.every((opt) => opt.optionCheck === true);
+    if (optionChecker !== true) {
+      this.setState({
+        background: "blue",
+        color: "white",
+      });
+    } else {
+      this.setState({
+        background: "white",
+        color: "black",
+      });
+    }
   };
 
   setCourse = (course) => {
