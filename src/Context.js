@@ -17,6 +17,12 @@ export class Context extends Component {
     year: "",
   };
 
+  setId = () => {
+    this.setState({
+      id: 1,
+    });
+  };
+
   handleClick = (e) => {
     let value = e.target.value;
     let question = this.state.questions.find(
@@ -40,7 +46,9 @@ export class Context extends Component {
     let option = question.options.find((opt) => opt.optionId === name);
     option.optionValue = value;
     option.optionCheck = true;
-    let optionChecker = question.options.every((opt) => opt.optionCheck === true);
+    let optionChecker = question.options.every(
+      (opt) => opt.optionCheck === true
+    );
     if (optionChecker !== true) {
       this.setState({
         background: "blue",
@@ -145,6 +153,7 @@ export class Context extends Component {
           getYear: this.getYear,
           handleSubmit: this.handleSubmit,
           handleTorFClick: this.handleTorFClick,
+          setId: this.setId
         }}
       >
         {this.props.children}

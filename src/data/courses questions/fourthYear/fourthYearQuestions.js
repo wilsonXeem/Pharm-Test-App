@@ -1,17 +1,17 @@
-import cology from "./cology";
-import cognosy from "./cognosy";
-import tech from "./tech";
-import chem from "./chem";
-import ceutics from "./ceutics";
-import clinicals from "./clinicals";
+import pharmacology from "./cology";
+import pharmacognosy from "./cognosy";
+import pharmtech from "./tech";
+import pharmchem from "./chem";
+import pharmaceutics from "./ceutics";
+import forensic from "./clinicals";
 
-const thirdYearQuestions = [
-  { id: "cology", course: cology },
-  { id: "cognosy", course: cognosy },
-  { id: "tech", course: tech },
-  { id: "chem", course: chem },
-  { id: "ceutics", course: ceutics },
-  { id: "clinicals", course: clinicals },
+const fourthYearQuestions = [
+  { id: "pharmacology", course: pharmacology },
+  { id: "pharmacognosy", course: pharmacognosy },
+  { id: "pharmtech", course: pharmtech },
+  { id: "pharmchem", course: pharmchem },
+  { id: "pharmaceutics", course: pharmaceutics },
+  { id: "forensic", course: forensic },
 ];
 
-export default thirdYearQuestions;
+export default fourthYearQuestions;

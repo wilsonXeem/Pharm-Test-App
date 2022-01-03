@@ -9,7 +9,13 @@ export default function Body({ course }) {
   return (
     <section className="test-body">
       <PrevButton />
-      {course === "cology" ? <TrueOrFalseQuestion /> : <Question />}
+      {course === "pharmacology" ||
+      course === "physiology" ||
+      course === "biochemistry" ? (
+        <TrueOrFalseQuestion />
+      ) : (
+        <Question />
+      )}
       <NextButton />
     </section>
   );

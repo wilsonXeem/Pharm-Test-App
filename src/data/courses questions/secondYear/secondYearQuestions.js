@@ -1,19 +1,19 @@
-import physio from "./physio";
-import biochem from "./biochem";
-import tech from "./tech";
-import cognosy from "./cognosy";
-import clinicals from "./clinicals";
+import physiology from "./physio";
+import biochemistry from "./biochem";
+import pharmtech from "./tech";
+import pharmacognosy from "./cognosy";
+import anatomy from "./clinicals";
 import dispensing from "./dispensing";
-import chem from "./chem";
+import pharmchem from "./chem";
 
 const secondYearQuestions = [
-  { id: "physio", course: physio },
-  { id: "biochem", course: biochem },
-  { id: "cognosy", course: cognosy },
+  { id: "physiology", course: physiology },
+  { id: "biochemistry", course: biochemistry },
+  { id: "pharmacognosy", course: pharmacognosy },
   { id: "dispensing", course: dispensing },
-  { id: "tech", course: tech },
-  { id: "chem", course: chem },
-  { id: "clinicals", course: clinicals },
+  { id: "pharmtech", course: pharmtech },
+  { id: "pharmchem", course: pharmchem },
+  { id: "anatomy", course: anatomy },
 ];
 
 export default secondYearQuestions;

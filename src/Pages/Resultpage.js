@@ -11,7 +11,13 @@ export default function Resultpage() {
     <>
       <Heading />
       <h1 style={{ textAlign: "center" }}>RESULTS</h1>
-      {course === "cology" ? <TrueOrFalseResult /> : <Result />}
+      {course === "pharmacology" ||
+      course === "physiology" ||
+      course === "biochemistry" ? (
+        <TrueOrFalseResult />
+      ) : (
+        <Result />
+      )}
     </>
   );
 }

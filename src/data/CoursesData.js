@@ -1,7 +1,7 @@
 const coursesData = {
-  secondYear: ["chem", "tech", "physio", "clinicals", "dispensing", "cognosy", "biochem"],
-  thirdYear: ["chem", "clinicals", "tech", "cognosy", "cology"],
-  fourthYear: ["chem", "tech", "clinicals", "cology", "ceutics","cognosy"],
+  secondYear: ["pharmchem", "pharmtech", "physiology", "anatomy", "dispensing", "pharmacognosy", "biochemistry"],
+  thirdYear: ["pharmchem", "pharmadmin", "pharmacognosy", "pharmacology"],
+  fourthYear: ["pharmchem", "pharmtech", "forensic", "pharmacology", "pharmaceutics","pharmacognosy"],
 };
 
 export default coursesData;
