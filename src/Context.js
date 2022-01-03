@@ -98,11 +98,19 @@ export class Context extends Component {
   };
 
   handleNext = (id) => {
-    this.setState({ id: id + 1 });
+    if (id === this.state.questions.length) {
+      this.setState({ id });
+    } else {
+      this.setState({ id: id + 1 });
+    }
   };
 
   handlePrev = (id) => {
-    this.setState({ id: id - 1 });
+    if (id === 1) {
+      this.setState({ id });
+    } else {
+      this.setState({ id: id - 1 });
+    }
   };
 
   handleSubmit = () => {
@@ -153,7 +161,7 @@ export class Context extends Component {
           getYear: this.getYear,
           handleSubmit: this.handleSubmit,
           handleTorFClick: this.handleTorFClick,
-          setId: this.setId
+          setId: this.setId,
         }}
       >
         {this.props.children}

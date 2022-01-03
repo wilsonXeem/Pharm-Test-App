@@ -6,10 +6,11 @@ import { ValueContext } from "../../Context";
 
 export default function SelectLevel() {
   const [year, setYear] = useState([]);
-  const { getYear } = useContext(ValueContext);
+  const { getYear, setId } = useContext(ValueContext);
 
   const handleChange = (e) => {
     let value = e.target.value;
+    setId()
     getYear(value)
     // console.log(value);
     const courses = coursesData;
