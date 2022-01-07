@@ -3,6 +3,7 @@ import Heading from "../Components/Heading";
 import Result from "../Components/Resultpage/Result";
 import TrueOrFalseResult from "../Components/Resultpage/TrueOrFalseResult";
 import { useParams } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 export default function Resultpage() {
   const { course } = useParams();
@@ -18,6 +19,7 @@ export default function Resultpage() {
       ) : (
         <Result />
       )}
+      <Footer />
     </>
   );
 }

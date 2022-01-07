@@ -194,6 +194,18 @@ td {
   text-align: left;
 }
 
+footer {
+  text-align: center;
+  color: white;
+  font-size: larger;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .banner {
     height: 50vh;

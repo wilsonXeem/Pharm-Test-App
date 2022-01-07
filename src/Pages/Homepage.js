@@ -3,6 +3,7 @@ import Banner from "../Components/Homepage/Banner";
 import Button from "../Components/Button";
 
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 export default function Homepage() {
   return (
@@ -14,6 +15,7 @@ export default function Homepage() {
           </Link>
         </Banner>
       </section>
+      <Footer />
     </>
   );
 }

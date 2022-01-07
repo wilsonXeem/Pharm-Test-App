@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div>
       <Router>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
@@ -17,7 +17,8 @@ function App() {
           <Route exact path="/result/:course" element={<Resultpage />} />
         </Routes>
       </Router>
-    </>
+      
+    </div>
   );
 }
 

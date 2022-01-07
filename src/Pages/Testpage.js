@@ -9,6 +9,7 @@ import TimerAndQuestions from "../Components/Testpage/Body/TimerAndQuestions";
 import Button from "../Components/Button";
 import { useParams } from "react-router-dom";
 import { ValueContext } from "../Context";
+import Footer from "../Components/Footer";
 
 export default function Testpage() {
   let { course } = useParams();
@@ -30,6 +31,7 @@ export default function Testpage() {
           : "White color shows answered question"}
       </p>
       <Questions />
+      <Footer />
     </>
   );
 }
