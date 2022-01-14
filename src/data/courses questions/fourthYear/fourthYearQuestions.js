@@ -6,12 +6,12 @@ import pharmaceutics from "./ceutics";
 import forensic from "./clinicals";
 
 const fourthYearQuestions = [
-  { id: "pharmacology", course: pharmacology },
-  { id: "pharmacognosy", course: pharmacognosy },
-  { id: "pharmtech", course: pharmtech },
-  { id: "pharmchem", course: pharmchem },
-  { id: "pharmaceutics", course: pharmaceutics },
-  { id: "forensic", course: forensic },
+  { id: "pharmacology", course: pharmacology, time: 20 },
+  { id: "pharmacognosy", course: pharmacognosy, time: 15 },
+  { id: "pharmtech", course: pharmtech, time: 14 },
+  { id: "pharmchem", course: pharmchem, time: 8 },
+  { id: "pharmaceutics", course: pharmaceutics, time: 16 },
+  { id: "forensic", course: forensic, time: 12 },
 ];
 
 export default fourthYearQuestions;

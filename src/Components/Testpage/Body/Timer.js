@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { ValueContext } from "../../../Context";
 
 export default function Timer() {
+  const { handleSubmit, time } = useContext(ValueContext);
   const [seconds, setSeconds] = useState(0);
-  const [minutes, setMinutes] = useState(50);
+  const [minutes, setMinutes] = useState(time);
   const navigate = useNavigate();
-  const { handleSubmit } = useContext(ValueContext);
 
   const updateTime = () => {
     if (minutes === 0 && seconds === 0) {

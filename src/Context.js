@@ -15,6 +15,7 @@ export class Context extends Component {
     background: "black",
     color: "white",
     year: "",
+    time: 0,
   };
 
   setId = () => {
@@ -68,19 +69,22 @@ export class Context extends Component {
         (cours) => cours.id === course
       );
       const questions = this.questionData(questionss.course);
-      this.setState({ questions });
+      const time = questionss.time;
+      this.setState({ questions, time });
     } else if (this.state.year === "secondYear") {
       const questionss = secondYearQuestions.find(
         (cours) => cours.id === course
       );
       const questions = this.questionData(questionss.course);
-      this.setState({ questions });
+      const time = questionss.time;
+      this.setState({ questions, time });
     } else {
       const questionss = fourthYearQuestions.find(
         (cours) => cours.id === course
       );
       const questions = this.questionData(questionss.course);
-      this.setState({ questions });
+      const time = questionss.time;
+      this.setState({ questions, time });
     }
   };
 

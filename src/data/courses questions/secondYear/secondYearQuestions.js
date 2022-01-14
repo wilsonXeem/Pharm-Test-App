@@ -7,13 +7,13 @@ import dispensing from "./dispensing";
 import pharmchem from "./chem";
 
 const secondYearQuestions = [
-  { id: "physiology", course: physiology },
-  { id: "biochemistry", course: biochemistry },
-  { id: "pharmacognosy", course: pharmacognosy },
-  { id: "dispensing", course: dispensing },
-  { id: "pharmtech", course: pharmtech },
-  { id: "pharmchem", course: pharmchem },
-  { id: "anatomy", course: anatomy },
+  { id: "physiology", course: physiology, time: 20 },
+  { id: "biochemistry", course: biochemistry, time: 19 },
+  { id: "pharmacognosy", course: pharmacognosy, time: 15 },
+  { id: "dispensing", course: dispensing, time: 17 },
+  { id: "pharmtech", course: pharmtech, time: 14 },
+  { id: "pharmchem", course: pharmchem, time: 13 },
+  { id: "anatomy", course: anatomy, time: 10 },
 ];
 
 export default secondYearQuestions;

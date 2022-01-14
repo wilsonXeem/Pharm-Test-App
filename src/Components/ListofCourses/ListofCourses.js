@@ -13,7 +13,7 @@ export default function ListofCourses({ year }) {
           key={i}
           className="proceedbutton"
           onClick={() => {
-            navigate(`/test/${course}`);
+            navigate(`/testintro/${course}`);
             setCourse(course);
           }}
           style={{margin:"1rem"}}
