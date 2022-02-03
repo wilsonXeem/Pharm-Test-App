@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div>
       <footer>
-        <Link to={"https://my-zimsite.herokuapp.com/my%20web.html"}>
+        <Link to={"https://my-zimsite.herokuapp.com/"}>
           xeem codes 2021
         </Link>
       </footer>
