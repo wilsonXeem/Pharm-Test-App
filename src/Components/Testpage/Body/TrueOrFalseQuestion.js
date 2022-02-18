@@ -32,17 +32,19 @@ export default function TrueOrFalseQuestion() {
                             </td>
                             <td>
                               <input
+                                className="radio"
                                 type="radio"
                                 value="true"
                                 name={option.optionId}
                                 onClick={handleTorFClick}
                                 onChange={() => handleChange(id)}
                                 defaultChecked={option.optionCheck}
-                              />
+                                />
                               T
                             </td>
                             <td>
                               <input
+                                className="radio"
                                 type="radio"
                                 value="false"
                                 name={option.optionId}

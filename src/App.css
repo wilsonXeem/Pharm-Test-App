@@ -87,6 +87,11 @@ body {
   justify-content: center;
 }
 
+.radio{
+  width: 2rem;
+  height: 2rem;
+}
+
 .question {
   font-size: x-large;
 }
